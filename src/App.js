@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
+import Header from "./components/header/";
+import Deck from "./components/table/deck/";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>BlackJack</h1>
-      </header>
+      <Header title="Black Jack" />
+      <Deck/>
     </div>
+
+
   );
 }
 

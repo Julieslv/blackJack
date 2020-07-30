@@ -5,7 +5,7 @@ import { Deck } from './components/table/deck/';
 import { House } from './components/table/house';
 import { Player } from './components/table/player';
 
-import { GlobalProvider } from './context/blackjack/deckState';
+import GlobalProvider from './context/blackjack/GameState';
 
 function App() {
   return (

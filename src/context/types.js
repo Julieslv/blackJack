@@ -1,1 +1,1 @@
-export const DECK_SHUFFLE = 'DECK_SHUFFLE';
+export const SHUFFLE_DECK = 'SHUFFLE_DECK';

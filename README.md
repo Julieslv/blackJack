@@ -2,9 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The current state of BlackJack is still a work in progress.
 
-Currently the app has reached the player getting a hand and the deck update.
+Currently the app has reached the player getting a hand in the state and the deck update.
 
-Further update sill still continue on the secondary branch _blackJack_.
+Further update still to continue on the secondary branch _blackJack_.
 
 ## Available Scripts
 

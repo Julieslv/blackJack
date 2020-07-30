@@ -1,13 +1,13 @@
 import React, { useContext, Fragment } from 'react';
 import GameContext from '../../../context/blackjack/gameContext';
+import Button from './../../button/';
 import styled from 'styled-components';
 
 export const Deck = () => {
-  const { deck, shuffleDeck } = useContext(GameContext);
+  const { deck, shuffleDeck, hit, deal } = useContext(GameContext);
 
   return (
     <Fragment>
-      <button onClick={shuffleDeck}>Shuffle</button>
       <DeckEl>
         {deck.map((card, index) => (
           <CardEl
@@ -23,9 +23,21 @@ export const Deck = () => {
           </CardEl>
         ))}
       </DeckEl>
+      <ActionEl>
+        <Button text='Shuffle' action={shuffleDeck} />
+        <Button text='Deal' action={deal} />
+        <Button text='Hit me!' action={hit} />
+      </ActionEl>
     </Fragment>
   );
 };
+
+const ActionEl = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.875rem;
+`;
 
 const DeckEl = styled.div`
   display: grid;
